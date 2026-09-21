@@ -1,30 +1,30 @@
 const WEDDING={
-  groom:"Andi Pratama",
-  bride:"Siti Aminah",
+  groom:"Muhammad Ikqbal",
+  bride:"Putri Wirasti",
   guest:"Bapak/Ibu/Saudara/i",
-  dateText:"20 Desember 2026",
-  dateShort:"20 • 12 • 2026",
-  dateISO:"2026-12-20T09:00:00+07:00",
+  dateText:"10 Oktober 2026",
+  dateShort:"10 • 11 • 2026",
+  dateISO:"2026-10-10T09:00:00+07:00",
 
   parents:{
-    groom:"Putra dari Bapak Budi & Ibu Bunga",
-    bride:"Putri dari Bapak Ahmad & Ibu Aminah"
+    groom:"Putra dari Bapak Boimen & Ibu Yuyun",
+    bride:"Putri dari Bapak Alm. Wagino/Lencong & Ibu Sutina/Tina"
   },
 
   akad:{
-    date:"Minggu, 20 Desember 2026",
-    time:"09.00 WIB – selesai",
-    venue:"Masjid Al-Ikhlas",
-    address:"Jl. Contoh No. 123, Kota Anda",
-    maps:"https://maps.google.com/?q=Masjid+Al-Ikhlas"
+    date:"Sabtu, 10 Oktober 2026",
+    time:"10.00 – Selesai",
+    venue:"Rumah Mempelai Wanita",
+    address:"Jl. Rawe 2 Lingk. 4 Martubung/SMP 25 Masuk Dalam",
+    maps:"https://maps.app.goo.gl/SgHHPexeW8L4cDvq5?g_st=iw"
   },
 
   resepsi:{
-    date:"Minggu, 20 Desember 2026",
-    time:"11.00 – 14.00 WIB",
-    venue:"Gedung Serbaguna",
-    address:"Jl. Contoh No. 456, Kota Anda",
-    maps:"https://maps.google.com/?q=Gedung+Serbaguna"
+    date:"Sabtu, 10 Oktober 2026",
+    time:"11.00 – Selesai",
+    venue:"Rumah Mempelai Wanita",
+    address:"Jl. Rawe 2 Lingk. 4 Martubung/SMP 25 Masuk Dalam",
+    maps:"https://maps.app.goo.gl/SgHHPexeW8L4cDvq5?g_st=iw"
   },
 
   gift:{
@@ -33,9 +33,9 @@ const WEDDING={
     holder:"Andi Pratama"
   },
 
-  whatsapp:"6281234567890",
+  whatsapp:"0858-0501-5967",
 
   // Isi dengan file musik Anda, misalnya:
   // music:"images/musik.mp3"
-  music:""
+  music:"images/musik.mp3"
 };
