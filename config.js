@@ -37,5 +37,5 @@ const WEDDING={
 
   // Isi dengan file musik Anda, misalnya:
   // music:"images/musik.mp3"
-  music:"images/musik.mp3"
+  music:"Musik.mp3"
 };
