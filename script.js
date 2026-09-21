@@ -1,4 +1,4 @@
-const $=id=>document.getElementById(id),W=window.WEDDING;
+const $=id=>document.getElementById(id),W=WEDDING;
 const text=(id,v)=>{if($(id))$(id).textContent=v};
 [
 ["wBride",W.bride.split(" ")[0]],["wGroom",W.groom.split(" ")[0]],["wDate",W.dateShort],["guest",W.guest],
