@@ -1,5 +1,6 @@
 const WEDDING={
   groom:"Muhammad Ikqbal",
+  groomNick:"Ikqbal",
   bride:"Putri Wirasti",
   guest:"Bapak/Ibu/Saudara/i",
   dateText:"10 Oktober 2026",
