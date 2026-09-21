@@ -1,8 +1,8 @@
 const $=id=>document.getElementById(id),W=WEDDING;
 const text=(id,v)=>{if($(id))$(id).textContent=v};
 [
-["wBride",W.bride.split(" ")[0]],["wGroom",W.groom.split(" ")[0]],["wDate",W.dateShort],["guest",W.guest],
-["heroBride",W.bride.split(" ")[0]],["heroGroom",W.groom.split(" ")[0]],["heroDate",W.dateText],
+["wBride",W.bride.split(" ")[0]],["wGroom",W.groomNick],["wDate",W.dateShort],["guest",W.guest],
+["heroBride",W.bride.split(" ")[0]],["heroGroom",W.groomNick],["heroDate",W.dateText],
 ["groomFull",W.groom],["brideFull",W.bride],["groomParents",W.parents.groom],["brideParents",W.parents.bride],
 ["akadDate",W.akad.date],["akadTime",W.akad.time],["akadVenue",W.akad.venue],["akadAddress",W.akad.address],
 ["resepsiDate",W.resepsi.date],["resepsiTime",W.resepsi.time],["resepsiVenue",W.resepsi.venue],["resepsiAddress",W.resepsi.address],
