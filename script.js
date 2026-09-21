@@ -33,9 +33,41 @@ $("copyAccount").onclick=async()=>{
  catch(e){alert("Nomor rekening: "+W.gift.account)}
 };
 
-$("music").onclick=()=>{
- if(!W.music){alert("Tambahkan file MP3 lalu isi properti music di config.js.");return}
- if($("audio").paused){$("audio").play();$("music").textContent="❚❚"}else{$("audio").pause();$("music").textContent="♫"}
+$("music").onclick=async()=>{
+
+  if(!W.music){
+    alert("Tambahkan file MP3 lalu isi properti music di config.js.");
+    return;
+  }
+
+  const audio=$("audio");
+
+  if(audio.paused){
+
+    try{
+      if(!audio.src){
+        audio.src=W.music;
+        audio.load();
+      }
+
+      await audio.play();
+      $("music").textContent="❚❚";
+
+    }catch(error){
+
+      console.error("Musik gagal diputar:",error);
+      $("music").textContent="♫";
+      alert("Musik belum dapat diputar. Silakan coba klik tombol musik sekali lagi.");
+
+    }
+
+  }else{
+
+    audio.pause();
+    $("music").textContent="♫";
+
+  }
+
 };
 window.addEventListener("load",()=>setTimeout(()=>$("preloader").classList.add("hide"),700));
 
