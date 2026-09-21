@@ -7,7 +7,7 @@ const text=(id,v)=>{if($(id))$(id).textContent=v};
 ["akadDate",W.akad.date],["akadTime",W.akad.time],["akadVenue",W.akad.venue],["akadAddress",W.akad.address],
 ["resepsiDate",W.resepsi.date],["resepsiTime",W.resepsi.time],["resepsiVenue",W.resepsi.venue],["resepsiAddress",W.resepsi.address],
 ["bank",W.gift.bank],["account",W.gift.account],["holder",W.gift.holder],
-["closingNames",W.bride.split(" ")[0]+" & "+W.groom.split(" ")[0]]
+["closingNames",W.bride.split(" ")[0]+" & "+W.groomNick]
 ].forEach(x=>text(x[0],x[1]));
 $("akadMap").href=W.akad.maps;$("resepsiMap").href=W.resepsi.maps;
 
