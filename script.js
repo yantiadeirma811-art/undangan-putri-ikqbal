@@ -1,7 +1,22 @@
 const $=id=>document.getElementById(id),W=WEDDING;
 const text=(id,v)=>{if($(id))$(id).textContent=v};
+
+/* =========================================================
+   NAMA TAMU DARI LINK
+   Contoh:
+   ?to=Bapak%20Budi
+   ?to=Ibu%20Siti
+   ?to=Keluarga%20Ahmad
+   ========================================================= */
+
+const params=new URLSearchParams(window.location.search);
+const guestFromURL=params.get("to");
+
+const guestName=guestFromURL
+  ? guestFromURL.trim()
+  : W.guest;
 [
-["wBride",W.bride.split(" ")[0]],["wGroom",W.groomNick],["wDate",W.dateShort],["guest",W.guest],
+["wBride",W.bride.split(" ")[0]],["wGroom",W.groomNick],["wDate",W.dateShort],["guest",guestName],
 ["heroBride",W.bride.split(" ")[0]],["heroGroom",W.groomNick],["heroDate",W.dateText],
 ["groomFull",W.groom],["brideFull",W.bride],["groomParents",W.parents.groom],["brideParents",W.parents.bride],
 ["akadDate",W.akad.date],["akadTime",W.akad.time],["akadVenue",W.akad.venue],["akadAddress",W.akad.address],
