@@ -338,3 +338,6 @@ body{
     bottom:15px;
   }
 }
+body{
+  border-top:10px solid red !important;
+}
