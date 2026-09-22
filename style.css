@@ -1747,3 +1747,44 @@ h3{
   }
 
 }
+/* =========================================================
+   PERBAIKAN COVER — NAMA MEMPELAI
+   ========================================================= */
+
+.welcome h1{
+  margin:10px 0 18px !important;
+  line-height:.68 !important;
+  font-size:clamp(4.5rem,14vw,9rem);
+  font-weight:500;
+}
+
+.welcome h1 em{
+  display:block;
+  margin:0 !important;
+  padding:0;
+  line-height:.75 !important;
+  font-size:.30em;
+  font-style:normal;
+}
+
+/* Jarak nama pertama dan kedua dibuat lebih rapat */
+.welcome h1 em + *{
+  margin-top:0;
+}
+
+/* Khusus layar HP */
+@media(max-width:700px){
+
+  .welcome h1{
+    margin:8px 0 16px !important;
+    line-height:.70 !important;
+    font-size:clamp(4rem,20vw,6.5rem);
+  }
+
+  .welcome h1 em{
+    margin:0 !important;
+    line-height:.7 !important;
+    font-size:.29em;
+  }
+
+}
