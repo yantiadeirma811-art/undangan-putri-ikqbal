@@ -203,7 +203,7 @@ h3{
 /* Tanggal */
 
 .date{
-  margin:10px auto 0;
+  margin:28px auto 0;
 
   color:var(--ink);
 
@@ -1174,7 +1174,7 @@ h3{
   }
 
   .date{
-    margin-top:8px;
+    margin-top:20px;
 
     font-size:.6rem;
 
