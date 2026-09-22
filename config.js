@@ -34,7 +34,7 @@ const WEDDING={
     holder:"Maulisma Sari"
   },
 
-  whatsapp:"0858-0501-5967",
+  whatsapp:"6285805015967",
 
   // Isi dengan file musik Anda, misalnya:
   // music:"images/musik.mp3"
