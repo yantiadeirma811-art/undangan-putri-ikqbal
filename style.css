@@ -180,12 +180,25 @@ h3{
 }
 
 .welcome h1{
-  margin: 20px 0 20px;
-  color: var(--gold-dark);
-  font-size: clamp(4.5rem, 14vw, 9rem);
-  line-height: .72; /* Diubah dari .72 menjadi 1.15 agar jarak antar baris nama dan & lebih renggang dan rapi */
-  font-weight: 500;
-  text-shadow: 0 8px 30px rgba(100,75,40,.08);
+  margin:20px 0 20px;
+  color:var(--gold-dark);
+  font-size:clamp(4.5rem,14vw,9rem);
+  line-height:.68;
+  font-weight:500;
+  text-shadow:0 8px 30px rgba(100,75,40,.08);
+}
+
+.welcome h1 span{
+  display:block;
+}
+
+.welcome h1 em{
+  display:block;
+  margin:0;
+  color:var(--gold);
+  font-size:.32em;
+  font-style:normal;
+  line-height:.75;
 }
 
 .welcome h1 em{
@@ -1009,15 +1022,16 @@ h3{
     padding:20px 10px;
   }
 
-  .welcome h1{
-    margin:25px 0 25px;
-    font-size:clamp(4rem,21vw,6.5rem);
-    line-height:.75;
-  }
+ .welcome h1{
+  margin:25px 0 25px;
+  font-size:clamp(4rem,21vw,6.5rem);
+  line-height:.68;
+}
 
-  .welcome h1 em{
-    margin:5px 0;
-  }
+.welcome h1 em{
+  margin:0;
+  line-height:.75;
+}
 
   .date{
     font-size:.62rem;
