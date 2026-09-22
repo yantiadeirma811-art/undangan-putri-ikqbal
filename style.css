@@ -1748,24 +1748,3 @@ h3{
 
 }
 
-/* Jarak nama pertama dan kedua dibuat lebih rapat */
-.welcome h1 em + *{
-  margin-top:0;
-}
-
-/* Khusus layar HP */
-@media(max-width:700px){
-
-  .welcome h1{
-    margin:8px 0 16px !important;
-    line-height:.70 !important;
-    font-size:clamp(4rem,20vw,6.5rem);
-  }
-
-  .welcome h1 em{
-    margin:0 !important;
-    line-height:.7 !important;
-    font-size:.29em;
-  }
-
-}
