@@ -1290,3 +1290,460 @@ h3{
     height:330px;
   }
 }
+/* =========================================================
+   TAHAP 2 — BOTANICAL & FLORAL DECORATION
+   ========================================================= */
+
+/* Frame luar seluruh cover */
+.welcome{
+  isolation:isolate;
+}
+
+.welcome::before{
+  content:"";
+  position:absolute;
+  inset:24px;
+  border:1px solid rgba(181,154,106,.28);
+  box-shadow:
+    inset 0 0 60px rgba(181,154,106,.035);
+  pointer-events:none;
+}
+
+/* Lingkaran dekorasi tengah */
+.welcome::after{
+  content:"";
+  position:absolute;
+  width:500px;
+  height:500px;
+  border:1px solid rgba(181,154,106,.12);
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+
+/* ---------------------------------------------------------
+   BOTANICAL KIRI ATAS
+   --------------------------------------------------------- */
+
+.p1{
+  width:180px;
+  height:280px;
+  top:-80px;
+  left:-50px;
+  border:0;
+  border-radius:50% 0 50% 0;
+  transform:rotate(38deg);
+  opacity:.5;
+}
+
+.p1::before,
+.p1::after{
+  content:"";
+  position:absolute;
+  display:block;
+  border:1px solid rgba(128,100,61,.25);
+  border-radius:100% 0 100% 0;
+}
+
+.p1::before{
+  width:85px;
+  height:150px;
+  left:20px;
+  top:45px;
+  transform:rotate(-25deg);
+}
+
+.p1::after{
+  width:65px;
+  height:120px;
+  left:85px;
+  top:105px;
+  transform:rotate(20deg);
+}
+
+
+/* ---------------------------------------------------------
+   BOTANICAL KANAN BAWAH
+   --------------------------------------------------------- */
+
+.p2{
+  width:190px;
+  height:290px;
+  right:-55px;
+  bottom:-100px;
+  border:0;
+  border-radius:0 50% 0 50%;
+  transform:rotate(215deg);
+  opacity:.45;
+}
+
+.p2::before,
+.p2::after{
+  content:"";
+  position:absolute;
+  display:block;
+  border:1px solid rgba(128,100,61,.25);
+  border-radius:0 100% 0 100%;
+}
+
+.p2::before{
+  width:80px;
+  height:145px;
+  right:20px;
+  bottom:55px;
+  transform:rotate(22deg);
+}
+
+.p2::after{
+  width:60px;
+  height:110px;
+  right:90px;
+  bottom:110px;
+  transform:rotate(-18deg);
+}
+
+
+/* ---------------------------------------------------------
+   DAUN KECIL KANAN ATAS
+   --------------------------------------------------------- */
+
+.p3{
+  width:100px;
+  height:160px;
+  right:11%;
+  top:15%;
+  border:0;
+  border-radius:100% 0 100% 0;
+  transform:rotate(65deg);
+  opacity:.35;
+}
+
+.p3::before,
+.p3::after{
+  content:"";
+  position:absolute;
+  display:block;
+  border:1px solid rgba(128,100,61,.25);
+  border-radius:100% 0 100% 0;
+}
+
+.p3::before{
+  width:45px;
+  height:80px;
+  left:10px;
+  top:20px;
+  transform:rotate(-15deg);
+}
+
+.p3::after{
+  width:42px;
+  height:75px;
+  right:5px;
+  bottom:10px;
+  transform:rotate(18deg);
+}
+
+
+/* =========================================================
+   ORNAMEN SECTION
+   ========================================================= */
+
+.section{
+  position:relative;
+  overflow:hidden;
+}
+
+.section::before{
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  left:-120px;
+  top:60px;
+  border:1px solid rgba(181,154,106,.1);
+  border-radius:50%;
+}
+
+.section::after{
+  content:"";
+  position:absolute;
+  width:130px;
+  height:130px;
+  right:-90px;
+  bottom:40px;
+  border:1px solid rgba(181,154,106,.1);
+  border-radius:50%;
+}
+
+
+/* =========================================================
+   FLORAL SYMBOL
+   ========================================================= */
+
+.floral{
+  position:relative;
+  display:inline-block;
+  margin-bottom:20px;
+  color:var(--gold);
+  font-size:1.7rem;
+}
+
+.floral::before,
+.floral::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  width:55px;
+  height:1px;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(181,154,106,.55)
+  );
+}
+
+.floral::before{
+  right:calc(100% + 15px);
+}
+
+.floral::after{
+  left:calc(100% + 15px);
+  transform:rotate(180deg);
+}
+
+
+/* =========================================================
+   COUPLE SECTION — PREMIUM FRAME
+   ========================================================= */
+
+.couple-grid{
+  position:relative;
+  padding:25px 0;
+}
+
+.couple-grid::before{
+  content:"";
+  position:absolute;
+  inset:-20px 5%;
+  border-top:1px solid rgba(181,154,106,.12);
+  border-bottom:1px solid rgba(181,154,106,.12);
+  pointer-events:none;
+}
+
+.person{
+  position:relative;
+}
+
+.person::after{
+  content:"";
+  position:absolute;
+  width:45px;
+  height:45px;
+  border:1px solid rgba(181,154,106,.25);
+  border-radius:50%;
+  top:15px;
+  right:15%;
+  z-index:-1;
+}
+
+.amp{
+  position:relative;
+  z-index:2;
+}
+
+
+/* =========================================================
+   EVENT CARD DECORATION
+   ========================================================= */
+
+.event{
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.7),
+      rgba(250,244,235,.8)
+    );
+}
+
+.event::after{
+  content:"";
+  position:absolute;
+  width:90px;
+  height:90px;
+  right:-45px;
+  bottom:-45px;
+  border:1px solid rgba(181,154,106,.18);
+  border-radius:50%;
+}
+
+
+/* =========================================================
+   LOVE STORY DECORATION
+   ========================================================= */
+
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:-3px;
+  top:0;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:var(--gold);
+}
+
+.timeline{
+  position:relative;
+}
+
+
+/* =========================================================
+   GALLERY FRAME
+   ========================================================= */
+
+.gallery{
+  position:relative;
+}
+
+.gallery::before{
+  content:"OUR MOMENTS";
+  position:absolute;
+  top:35px;
+  left:50%;
+  transform:translateX(-50%);
+  color:rgba(128,100,61,.08);
+  font:600 4rem "Cormorant Garamond",serif;
+  letter-spacing:.08em;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
+
+/* =========================================================
+   GIFT CARD PREMIUM
+   ========================================================= */
+
+.gift-card{
+  position:relative;
+  overflow:hidden;
+}
+
+.gift-card::before,
+.gift-card::after{
+  content:"";
+  position:absolute;
+  width:70px;
+  height:70px;
+  border:1px solid rgba(181,154,106,.18);
+}
+
+.gift-card::before{
+  top:-35px;
+  left:-35px;
+  border-radius:50%;
+}
+
+.gift-card::after{
+  right:-35px;
+  bottom:-35px;
+  border-radius:50%;
+}
+
+
+/* =========================================================
+   RSVP PREMIUM
+   ========================================================= */
+
+.rsvp{
+  position:relative;
+}
+
+.rsvp::before{
+  content:"";
+  position:absolute;
+  top:40px;
+  left:50%;
+  width:80px;
+  height:1px;
+  background:var(--gold);
+  transform:translateX(-50%);
+  opacity:.5;
+}
+
+
+/* =========================================================
+   CLOSING
+   ========================================================= */
+
+.closing{
+  isolation:isolate;
+}
+
+.closing::before{
+  content:"";
+  position:absolute;
+  inset:25px;
+  border:1px solid rgba(255,255,255,.25);
+  z-index:2;
+  pointer-events:none;
+}
+
+.closing-copy h2{
+  text-shadow:
+    0 5px 25px rgba(0,0,0,.35);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:700px){
+
+  .welcome::before{
+    inset:15px;
+  }
+
+  .welcome::after{
+    width:330px;
+    height:330px;
+  }
+
+  .p1{
+    left:-80px;
+    top:-90px;
+    transform:scale(.8) rotate(38deg);
+  }
+
+  .p2{
+    right:-90px;
+    bottom:-120px;
+    transform:scale(.8) rotate(215deg);
+  }
+
+  .p3{
+    right:-15px;
+    top:18%;
+    transform:scale(.7) rotate(65deg);
+  }
+
+  .section::before{
+    left:-150px;
+  }
+
+  .section::after{
+    right:-120px;
+  }
+
+  .gallery::before{
+    font-size:2.7rem;
+    top:30px;
+  }
+
+  .couple-grid::before{
+    inset:-10px 0;
+  }
+
+}
