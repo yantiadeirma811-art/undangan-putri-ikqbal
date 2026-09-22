@@ -1,5 +1,6 @@
 /* =========================================================
-   PUTRI & IKQBAL — LUXURY WEDDING INVITATION
+   PUTRI & IKQBAL
+   WEDDING INVITATION - CLEAN VERSION
    ========================================================= */
 
 :root{
@@ -125,10 +126,13 @@ h3{
   position:fixed;
   inset:0;
   z-index:90;
+
   display:grid;
   place-items:center;
+
   overflow:hidden;
   text-align:center;
+
   background:
     radial-gradient(
       circle at 50% 38%,
@@ -137,6 +141,7 @@ h3{
       #e8d9c2 72%,
       #d4b991 100%
     );
+
   transition:
     transform 1.2s cubic-bezier(.77,0,.18,1),
     opacity .8s ease;
@@ -146,31 +151,12 @@ h3{
   transform:translateY(-100%);
 }
 
-.welcome::before{
-  content:"";
-  position:absolute;
-  inset:25px;
-  border:1px solid rgba(181,154,106,.28);
-  pointer-events:none;
-}
-
-.welcome::after{
-  content:"";
-  position:absolute;
-  width:520px;
-  height:520px;
-  border:1px solid rgba(181,154,106,.15);
-  border-radius:50%;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-}
-
 .welcome-inner{
   position:relative;
   z-index:3;
+
   width:min(90%,700px);
-  padding:30px 20px;
+  padding:25px 20px;
 }
 
 .welcome .kicker{
@@ -179,12 +165,20 @@ h3{
   color:var(--gold-dark);
 }
 
+
+/* Nama di cover */
+
 .welcome h1{
-  margin:20px 0 20px;
+  margin:15px 0 10px;
+
   color:var(--gold-dark);
+
   font-size:clamp(4.5rem,14vw,9rem);
+
   line-height:.68;
+
   font-weight:500;
+
   text-shadow:0 8px 30px rgba(100,75,40,.08);
 }
 
@@ -194,73 +188,61 @@ h3{
 
 .welcome h1 em{
   display:block;
+
   margin:0;
+
   color:var(--gold);
+
   font-size:.32em;
   font-style:normal;
-  line-height:.75;
+
+  line-height:.7;
 }
 
+
+/* Tanggal */
+
 .date{
-  margin:0 auto;
+  margin:10px auto 0;
+
   color:var(--ink);
+
   font-size:.72rem;
   font-weight:500;
+
   letter-spacing:.48em;
   text-indent:.48em;
 }
 
+
+/* Ornamen sederhana */
+
 .ornament{
-  margin:22px auto;
+  margin:15px auto;
+
   color:var(--gold);
+
   font-family:"Cormorant Garamond",serif;
   font-size:2rem;
 }
 
+
+/* Tamu */
+
 .to{
-  margin:25px auto 28px;
+  margin:15px auto 20px;
+
   color:var(--muted);
+
   font-size:.68rem;
   letter-spacing:.04em;
 }
 
 .to strong{
   color:var(--ink);
+
   font-size:.82rem;
   font-weight:500;
-}
-
-
-/* Decorative petals */
-
-.petal{
-  position:absolute;
-  width:180px;
-  height:300px;
-  border:1px solid rgba(181,154,106,.22);
-  border-radius:100% 0 100% 0;
-  opacity:.7;
-}
-
-.p1{
-  top:-100px;
-  left:-70px;
-  transform:rotate(28deg);
-}
-
-.p2{
-  right:-80px;
-  bottom:-120px;
-  transform:rotate(208deg);
-}
-
-.p3{
-  width:90px;
-  height:150px;
-  top:12%;
-  right:12%;
-  transform:rotate(70deg);
-  opacity:.4;
 }
 
 
@@ -271,16 +253,26 @@ h3{
 .gold-btn,
 .outline-btn{
   display:inline-flex;
+
   align-items:center;
   justify-content:center;
+
   min-height:48px;
+
   padding:13px 28px;
+
   border-radius:999px;
+
   cursor:pointer;
+
   text-decoration:none;
+
   font:600 .64rem "Montserrat",sans-serif;
+
   letter-spacing:.14em;
+
   text-transform:uppercase;
+
   transition:
     transform .3s ease,
     background .3s ease,
@@ -290,33 +282,47 @@ h3{
 
 .gold-btn{
   border:1px solid var(--gold-dark);
+
   background:var(--gold-dark);
+
   color:#fff;
-  box-shadow:0 10px 25px rgba(90,65,35,.14);
+
+  box-shadow:
+    0 10px 25px rgba(90,65,35,.14);
 }
 
 .gold-btn:hover{
   transform:translateY(-3px);
+
   background:#69502f;
-  box-shadow:0 15px 35px rgba(90,65,35,.2);
+
+  box-shadow:
+    0 15px 35px rgba(90,65,35,.2);
 }
 
 .outline-btn{
   border:1px solid var(--gold-dark);
+
   background:transparent;
+
   color:var(--gold-dark);
+
   margin-left:8px;
 }
 
 .outline-btn:hover{
   transform:translateY(-3px);
+
   background:var(--gold-dark);
+
   color:#fff;
 }
 
 .small-btn{
   min-height:40px;
+
   padding:10px 20px;
+
   font-size:.58rem;
 }
 
@@ -327,19 +333,29 @@ h3{
 
 #nav{
   position:fixed;
+
   top:0;
   left:0;
   right:0;
+
   z-index:30;
+
   display:flex;
+
   align-items:center;
   justify-content:space-between;
+
   padding:17px 5%;
-  background:rgba(255,253,249,.88);
+
+  background:rgba(255,253,249,.95);
+
   border-bottom:1px solid rgba(181,154,106,.18);
-  box-shadow:0 8px 30px rgba(60,45,30,.06);
-  backdrop-filter:blur(14px);
+
+  box-shadow:
+    0 8px 30px rgba(60,45,30,.06);
+
   transform:translateY(-100%);
+
   transition:.5s ease;
 }
 
@@ -349,7 +365,9 @@ h3{
 
 .nav-brand{
   color:var(--gold-dark);
+
   font:600 1.55rem "Cormorant Garamond",serif;
+
   letter-spacing:.04em;
 }
 
@@ -363,12 +381,16 @@ h3{
 }
 
 .nav-links a{
-  position:relative;
   color:var(--ink);
+
   text-decoration:none;
+
   font-size:.62rem;
+
   letter-spacing:.12em;
+
   text-transform:uppercase;
+
   transition:.3s ease;
 }
 
@@ -376,21 +398,8 @@ h3{
   color:var(--gold-dark);
 }
 
-.nav-links a::after{
-  content:"";
-  position:absolute;
-  left:50%;
-  bottom:-7px;
-  width:0;
-  height:1px;
-  background:var(--gold);
-  transform:translateX(-50%);
-  transition:.3s ease;
-}
 
-.nav-links a:hover::after{
-  width:100%;
-}
+/* Konten dikunci sebelum tombol dibuka */
 
 .locked{
   display:none;
@@ -403,23 +412,29 @@ h3{
 
 .hero{
   position:relative;
+
   display:grid;
   place-items:center;
+
   height:100vh;
   min-height:650px;
+
   overflow:hidden;
+
   color:#fff;
+
   text-align:center;
 }
 
 .hero-bg,
 .closing-bg{
   position:absolute;
+
   inset:0;
+
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
-  transform:scale(1.03);
 }
 
 .hero-bg{
@@ -427,7 +442,7 @@ h3{
 }
 
 .hero:hover .hero-bg{
-  transform:scale(1.08);
+  transform:scale(1.04);
 }
 
 .hero-shade,
@@ -448,46 +463,67 @@ h3{
 .hero-copy,
 .closing-copy{
   position:relative;
+
   z-index:2;
+
   padding:30px;
-  text-shadow:0 8px 30px rgba(0,0,0,.25);
+
+  text-shadow:
+    0 8px 30px rgba(0,0,0,.25);
 }
 
 .hero h2{
-  margin: 20px 0;
-  color: #fff;
-  font-size: clamp(4rem, 11vw, 8.5rem);
-  line-height: 1.15; /* Diubah dari .8 menjadi 1.15 agar tidak terlalu bertumpuk */
-  font-weight: 500;
+  margin:20px 0;
+
+  color:#fff;
+
+  font-size:clamp(4rem,11vw,8.5rem);
+
+  line-height:.9;
+
+  font-weight:500;
 }
 
 .hero h2 i{
   color:#d5b77e;
+
   font-style:normal;
+
   font-size:.58em;
 }
 
 .hero-copy > p:not(.kicker){
   font-size:.8rem;
+
   letter-spacing:.2em;
 }
 
 .scroll{
-  margin-top:70px;
+  margin-top:60px;
+
   font-size:.58rem;
+
   letter-spacing:.3em;
 }
 
 .scroll span{
   display:block;
+
   margin-top:8px;
+
   font-size:1.3rem;
+
   animation:floatArrow 1.8s ease-in-out infinite;
 }
 
 @keyframes floatArrow{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(8px)}
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(8px);
+  }
 }
 
 
@@ -497,6 +533,7 @@ h3{
 
 .section{
   padding:115px 7%;
+
   text-align:center;
 }
 
@@ -510,22 +547,21 @@ h3{
 
 .section h2{
   position:relative;
+
   display:inline-block;
 }
 
 .section h2::after{
   content:"";
+
   display:block;
+
   width:55px;
   height:1px;
-  margin:24px auto 0;
-  background:var(--gold);
-}
 
-.floral{
-  margin-bottom:15px;
-  color:var(--gold);
-  font-size:2rem;
+  margin:24px auto 0;
+
+  background:var(--gold);
 }
 
 
@@ -533,13 +569,27 @@ h3{
    COUPLE
    ========================================================= */
 
+.floral{
+  margin-bottom:15px;
+
+  color:var(--gold);
+
+  font-size:2rem;
+}
+
 .couple-grid{
   position:relative;
+
   display:grid;
+
   grid-template-columns:1fr 100px 1fr;
+
   align-items:center;
+
   gap:25px;
+
   max-width:1050px;
+
   margin:60px auto 0;
 }
 
@@ -548,49 +598,55 @@ h3{
 }
 
 .person:hover{
-  transform:translateY(-8px);
+  transform:translateY(-5px);
 }
 
 .portrait{
   width:min(280px,100%);
+
   aspect-ratio:3/4;
+
   margin:auto;
+
   overflow:hidden;
-  border:9px solid rgba(255,255,255,.96);
+
+  border:8px solid rgba(255,255,255,.96);
+
   border-radius:150px 150px 12px 12px;
+
   box-shadow:
     0 20px 45px rgba(70,50,30,.14),
     0 0 0 1px rgba(181,154,106,.2);
-  transition:.5s ease;
-}
-
-.person:hover .portrait{
-  box-shadow:
-    0 28px 55px rgba(70,50,30,.2),
-    0 0 0 1px rgba(181,154,106,.4);
 }
 
 .portrait img{
   display:block;
+
   width:100%;
   height:100%;
+
   object-fit:cover;
 }
 
 .person h3{
   margin:24px 0 5px;
+
   color:var(--gold-dark);
+
   font-size:2rem;
 }
 
 .person p{
   max-width:300px;
+
   color:var(--muted);
+
   font-size:.72rem;
 }
 
 .amp{
   color:var(--gold);
+
   font:500 4rem "Cormorant Garamond",serif;
 }
 
@@ -601,44 +657,68 @@ h3{
 
 .quote-section{
   position:relative;
+
   padding:130px 7%;
-  background:url("images/quote.jpg") center/cover no-repeat;
+
+  background:
+    url("images/quote.jpg")
+    center/cover
+    no-repeat;
 }
 
 .quote-section::before{
   content:"";
+
   position:absolute;
+
   inset:0;
+
   background:rgba(50,38,27,.55);
 }
 
 .quote-card{
   position:relative;
+
   max-width:800px;
+
   margin:auto;
+
   padding:60px 45px;
-  background:rgba(255,253,249,.94);
+
+  background:rgba(255,253,249,.95);
+
   border:1px solid rgba(181,154,106,.25);
-  box-shadow:0 25px 60px rgba(30,20,10,.18);
+
+  box-shadow:
+    0 25px 60px rgba(30,20,10,.18);
+
   text-align:center;
 }
 
 .quote-card > span{
   display:block;
+
   height:30px;
+
   color:var(--gold);
+
   font:5rem "Cormorant Garamond",serif;
+
   line-height:.5;
 }
 
 .quote-card p{
   color:var(--ink);
-  font:italic 1.35rem/1.7 "Cormorant Garamond",serif;
+
+  font:italic 1.35rem/1.7
+    "Cormorant Garamond",serif;
 }
 
 .quote-card small{
   color:var(--muted);
+
   font-size:.68rem;
+
   letter-spacing:.12em;
 }
 
@@ -649,38 +729,48 @@ h3{
 
 .countdown{
   display:flex;
+
   justify-content:center;
+
   gap:14px;
+
   flex-wrap:wrap;
+
   margin:45px 0 75px;
 }
 
 .countdown div{
   width:105px;
-  padding:22px 10px;
-  background:rgba(255,255,255,.65);
-  border:1px solid var(--line);
-  border-radius:10px;
-  box-shadow:0 10px 28px rgba(70,50,30,.06);
-  transition:.35s ease;
-}
 
-.countdown div:hover{
-  transform:translateY(-6px);
-  box-shadow:0 18px 35px rgba(70,50,30,.12);
+  padding:22px 10px;
+
+  background:rgba(255,255,255,.65);
+
+  border:1px solid var(--line);
+
+  border-radius:10px;
+
+  box-shadow:
+    0 10px 28px rgba(70,50,30,.06);
 }
 
 .countdown strong{
   display:block;
+
   color:var(--gold-dark);
+
   font:600 2.8rem "Cormorant Garamond",serif;
+
   line-height:1;
 }
 
 .countdown small{
   color:var(--muted);
+
   font-size:.58rem;
+
   letter-spacing:.15em;
+
   text-transform:uppercase;
 }
 
@@ -691,71 +781,84 @@ h3{
 
 .events{
   display:grid;
+
   grid-template-columns:1fr 1fr;
+
   gap:28px;
+
   max-width:1050px;
+
   margin:auto;
 }
 
 .event{
   position:relative;
-  overflow:hidden;
+
   padding:50px 30px;
+
   background:var(--paper);
+
   border:1px solid var(--line);
-  box-shadow:0 15px 40px rgba(70,50,30,.07);
-  transition:.4s ease;
+
+  box-shadow:
+    0 15px 40px rgba(70,50,30,.07);
 }
 
 .event::before{
   content:"";
+
   position:absolute;
+
   top:0;
   left:10%;
+
   width:80%;
   height:2px;
-  background:linear-gradient(
-    90deg,
-    transparent,
-    var(--gold),
-    transparent
-  );
-}
 
-.event:hover{
-  transform:translateY(-8px);
-  box-shadow:0 25px 50px rgba(70,50,30,.13);
+  background:var(--gold);
 }
 
 .event-icon{
   margin-bottom:10px;
+
   color:var(--gold);
+
   font-size:2rem;
 }
 
 .event h3{
   margin:15px 0;
+
   color:var(--gold-dark);
 }
 
 .event h4{
   margin:22px 0 5px;
+
   font:600 1.05rem "Montserrat",sans-serif;
 }
 
 .event p{
   color:var(--muted);
+
   font-size:.76rem;
 }
 
 .text-btn{
   display:inline-block;
+
   margin-top:12px;
+
   color:var(--gold-dark);
+
   font-size:.63rem;
+
   font-weight:600;
+
   letter-spacing:.1em;
+
   text-decoration:none;
+
   text-transform:uppercase;
 }
 
@@ -770,52 +873,65 @@ h3{
 
 .timeline{
   max-width:720px;
+
   margin:60px auto 0;
+
   text-align:left;
 }
 
 .timeline > div{
   position:relative;
-  padding:0 0 45px 38px;
+
+  padding:
+    0
+    0
+    45px
+    38px;
+
   border-left:1px solid var(--gold);
-  transition:.3s ease;
 }
 
 .timeline > div:last-child{
   padding-bottom:0;
 }
 
-.timeline > div:hover{
-  transform:translateX(6px);
-}
-
 .timeline > div::before{
   content:"";
+
   position:absolute;
+
   top:5px;
   left:-5px;
+
   width:9px;
   height:9px;
+
   border-radius:50%;
+
   background:var(--gold);
-  box-shadow:0 0 0 6px rgba(181,154,106,.12);
 }
 
 .timeline span{
   color:var(--gold-dark);
+
   font-size:.62rem;
+
   font-weight:600;
+
   letter-spacing:.2em;
 }
 
 .timeline h3{
   margin:5px 0 8px;
+
   color:var(--ink);
 }
 
 .timeline p{
   margin:0;
+
   color:var(--muted);
+
   font-size:.78rem;
 }
 
@@ -825,36 +941,32 @@ h3{
    ========================================================= */
 
 .gallery{
-  background:
-    linear-gradient(
-      rgba(238,229,215,.7),
-      rgba(238,229,215,.7)
-    ),
-    var(--cream);
+  background:var(--paper);
 }
 
 .masonry{
-  columns:3 250px;
-  column-gap:15px;
+  columns:3 220px;
+
+  column-gap:14px;
+
   max-width:1100px;
+
   margin:50px auto 0;
 }
 
 .masonry img{
   display:block;
-  width:100%;
-  margin:0 0 15px;
-  break-inside:avoid;
-  border-radius:5px;
-  box-shadow:0 10px 25px rgba(50,40,30,.1);
-  filter:saturate(.92);
-  transition:.5s ease;
-}
 
-.masonry img:hover{
-  transform:scale(1.025);
-  filter:saturate(1);
-  box-shadow:0 18px 40px rgba(50,40,30,.17);
+  width:100%;
+
+  margin-bottom:14px;
+
+  break-inside:avoid;
+
+  border-radius:6px;
+
+  box-shadow:
+    0 8px 25px rgba(70,50,30,.12);
 }
 
 
@@ -864,24 +976,30 @@ h3{
 
 .gift-card{
   max-width:500px;
-  margin:45px auto 0;
-  padding:45px 25px;
-  background:var(--paper);
-  border:1px solid var(--line);
-  box-shadow:0 15px 40px rgba(70,50,30,.07);
-  transition:.4s ease;
-}
 
-.gift-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 25px 50px rgba(70,50,30,.13);
+  margin:45px auto 0;
+
+  padding:45px 25px;
+
+  background:var(--paper);
+
+  border:1px solid var(--line);
+
+  box-shadow:
+    0 15px 40px rgba(70,50,30,.07);
+
+  text-align:center;
 }
 
 .gift-card strong{
   display:block;
+
   margin:12px 0;
+
   color:var(--gold-dark);
+
   font:600 2rem "Cormorant Garamond",serif;
+
   letter-spacing:.08em;
 }
 
@@ -905,17 +1023,24 @@ h3{
 
 .closing{
   position:relative;
+
   display:grid;
+
   place-items:center;
+
   min-height:650px;
+
   height:80vh;
+
   overflow:hidden;
+
   color:#fff;
+
   text-align:center;
 }
 
 .closing-bg{
-  transform:scale(1.04);
+  transform:scale(1.02);
 }
 
 .closing-shade{
@@ -933,8 +1058,11 @@ h3{
 
 .closing h2{
   margin:20px 0;
+
   color:#fff;
+
   font-size:clamp(4rem,10vw,7.5rem);
+
   line-height:.8;
 }
 
@@ -945,25 +1073,35 @@ h3{
 
 .music{
   position:fixed;
+
   right:22px;
   bottom:22px;
+
   z-index:35;
+
   width:52px;
   height:52px;
+
   border:1px solid var(--gold);
+
   border-radius:50%;
+
   background:var(--gold-dark);
+
   color:#fff;
+
   cursor:pointer;
+
   font-size:1.2rem;
+
   box-shadow:
-    0 10px 25px rgba(0,0,0,.18),
-    0 0 0 5px rgba(181,154,106,.12);
+    0 10px 25px rgba(0,0,0,.18);
+
   transition:.3s ease;
 }
 
 .music:hover{
-  transform:scale(1.1);
+  transform:scale(1.08);
 }
 
 
@@ -973,7 +1111,9 @@ h3{
 
 .reveal{
   opacity:0;
+
   transform:translateY(30px);
+
   transition:
     opacity 1s ease,
     transform 1s ease;
@@ -981,6 +1121,7 @@ h3{
 
 .reveal.visible{
   opacity:1;
+
   transform:none;
 }
 
@@ -999,52 +1140,67 @@ h3{
     display:none;
   }
 
-  .welcome::before{
-    inset:15px;
-  }
 
-  .welcome::after{
-    width:360px;
-    height:360px;
-  }
+  /* COVER */
 
   .welcome-inner{
     width:94%;
-    padding:20px 10px;
+
+    padding:15px 10px;
   }
 
- .welcome h1{
-  margin:25px 0 25px;
-  font-size:clamp(4rem,21vw,6.5rem);
-  line-height:.68;
-}
+  .welcome .kicker{
+    font-size:.58rem;
 
-.welcome h1 em{
-  margin:0;
-  line-height:.75;
-}
+    letter-spacing:.32em;
+  }
+
+  .welcome h1{
+    margin:12px 0 8px;
+
+    font-size:clamp(
+      4rem,
+      21vw,
+      6.5rem
+    );
+
+    line-height:.66;
+  }
+
+  .welcome h1 em{
+    margin:0;
+
+    line-height:.65;
+  }
 
   .date{
-    font-size:.62rem;
+    margin-top:8px;
+
+    font-size:.6rem;
+
     letter-spacing:.3em;
+
     text-indent:.3em;
   }
 
   .ornament{
-    margin:17px auto;
+    margin:12px auto;
+
+    font-size:1.7rem;
   }
 
   .to{
-    margin:20px auto 24px;
+    margin:12px auto 18px;
   }
 
-  .petal{
-    opacity:.45;
+  .welcome .gold-btn{
+    min-height:46px;
+
+    padding:12px 22px;
   }
 
-  .p3{
-    right:-20px;
-  }
+
+  /* GENERAL */
 
   .section{
     padding:80px 20px;
@@ -1058,12 +1214,16 @@ h3{
     font-size:.82rem;
   }
 
+
+  /* HERO */
+
   .hero{
     min-height:600px;
   }
 
   .hero h2{
     font-size:4.5rem;
+
     line-height:.82;
   }
 
@@ -1071,20 +1231,29 @@ h3{
     margin-top:50px;
   }
 
+
+  /* COUPLE */
+
   .couple-grid{
     grid-template-columns:1fr;
+
     gap:15px;
+
     margin-top:45px;
   }
 
   .amp{
     margin:5px 0;
+
     font-size:3rem;
   }
 
   .portrait{
     width:min(250px,85%);
   }
+
+
+  /* QUOTE */
 
   .quote-section{
     padding:75px 18px;
@@ -1098,13 +1267,18 @@ h3{
     font-size:1.2rem;
   }
 
+
+  /* COUNTDOWN */
+
   .countdown{
     gap:8px;
+
     margin-bottom:55px;
   }
 
   .countdown div{
     width:76px;
+
     padding:17px 5px;
   }
 
@@ -1116,14 +1290,21 @@ h3{
     font-size:.5rem;
   }
 
+
+  /* EVENT */
+
   .events{
     grid-template-columns:1fr;
+
     gap:18px;
   }
 
   .event{
     padding:40px 20px;
   }
+
+
+  /* STORY */
 
   .timeline{
     margin-top:45px;
@@ -1133,9 +1314,14 @@ h3{
     padding-left:28px;
   }
 
+
+  /* GALLERY */
+
   .masonry{
     columns:2 140px;
+
     column-gap:8px;
+
     margin-top:40px;
   }
 
@@ -1143,19 +1329,29 @@ h3{
     margin-bottom:8px;
   }
 
+
+  /* GIFT */
+
   .gift-card{
     padding:38px 20px;
   }
 
+
+  /* BUTTONS */
+
   .gold-btn,
   .outline-btn{
     padding:12px 20px;
+
     font-size:.58rem;
   }
 
   .outline-btn{
     margin-left:4px;
   }
+
+
+  /* CLOSING */
 
   .closing{
     min-height:550px;
@@ -1165,9 +1361,14 @@ h3{
     font-size:4.5rem;
   }
 
+
+  /* MUSIC */
+
   .music{
     right:15px;
+
     bottom:15px;
+
     width:46px;
     height:46px;
   }
@@ -1185,11 +1386,11 @@ h3{
   }
 
   .welcome .kicker{
-    font-size:.58rem;
+    font-size:.55rem;
   }
 
   .date{
-    font-size:.56rem;
+    font-size:.54rem;
   }
 
   .welcome .gold-btn{
@@ -1208,462 +1409,3 @@ h3{
     font-size:2.7rem;
   }
 }
-
-/* =========================================================
-   TAHAP 2 — BOTANICAL & FLORAL DECORATION
-   ========================================================= */
-
-/* Frame luar seluruh cover */
-.welcome{
-  isolation:isolate;
-}
-
-.welcome::before{
-  content:"";
-  position:absolute;
-  inset:24px;
-  border:1px solid rgba(181,154,106,.28);
-  box-shadow:
-    inset 0 0 60px rgba(181,154,106,.035);
-  pointer-events:none;
-}
-
-/* Lingkaran dekorasi tengah */
-.welcome::after{
-  content:"";
-  position:absolute;
-  width:500px;
-  height:500px;
-  border:1px solid rgba(181,154,106,.12);
-  border-radius:50%;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  pointer-events:none;
-}
-
-/* ---------------------------------------------------------
-   BOTANICAL KIRI ATAS
-   --------------------------------------------------------- */
-
-.p1{
-  width:180px;
-  height:280px;
-  top:-80px;
-  left:-50px;
-  border:0;
-  border-radius:50% 0 50% 0;
-  transform:rotate(38deg);
-  opacity:.5;
-}
-
-.p1::before,
-.p1::after{
-  content:"";
-  position:absolute;
-  display:block;
-  border:1px solid rgba(128,100,61,.25);
-  border-radius:100% 0 100% 0;
-}
-
-.p1::before{
-  width:85px;
-  height:150px;
-  left:20px;
-  top:45px;
-  transform:rotate(-25deg);
-}
-
-.p1::after{
-  width:65px;
-  height:120px;
-  left:85px;
-  top:105px;
-  transform:rotate(20deg);
-}
-
-
-/* ---------------------------------------------------------
-   BOTANICAL KANAN BAWAH
-   --------------------------------------------------------- */
-
-.p2{
-  width:190px;
-  height:290px;
-  right:-55px;
-  bottom:-100px;
-  border:0;
-  border-radius:0 50% 0 50%;
-  transform:rotate(215deg);
-  opacity:.45;
-}
-
-.p2::before,
-.p2::after{
-  content:"";
-  position:absolute;
-  display:block;
-  border:1px solid rgba(128,100,61,.25);
-  border-radius:0 100% 0 100%;
-}
-
-.p2::before{
-  width:80px;
-  height:145px;
-  right:20px;
-  bottom:55px;
-  transform:rotate(22deg);
-}
-
-.p2::after{
-  width:60px;
-  height:110px;
-  right:90px;
-  bottom:110px;
-  transform:rotate(-18deg);
-}
-
-
-/* ---------------------------------------------------------
-   DAUN KECIL KANAN ATAS
-   --------------------------------------------------------- */
-
-.p3{
-  width:100px;
-  height:160px;
-  right:11%;
-  top:15%;
-  border:0;
-  border-radius:100% 0 100% 0;
-  transform:rotate(65deg);
-  opacity:.35;
-}
-
-.p3::before,
-.p3::after{
-  content:"";
-  position:absolute;
-  display:block;
-  border:1px solid rgba(128,100,61,.25);
-  border-radius:100% 0 100% 0;
-}
-
-.p3::before{
-  width:45px;
-  height:80px;
-  left:10px;
-  top:20px;
-  transform:rotate(-15deg);
-}
-
-.p3::after{
-  width:42px;
-  height:75px;
-  right:5px;
-  bottom:10px;
-  transform:rotate(18deg);
-}
-
-
-/* =========================================================
-   ORNAMEN SECTION
-   ========================================================= */
-
-.section{
-  position:relative;
-  overflow:hidden;
-}
-
-.section::before{
-  content:"";
-  position:absolute;
-  width:180px;
-  height:180px;
-  left:-120px;
-  top:60px;
-  border:1px solid rgba(181,154,106,.1);
-  border-radius:50%;
-}
-
-.section::after{
-  content:"";
-  position:absolute;
-  width:130px;
-  height:130px;
-  right:-90px;
-  bottom:40px;
-  border:1px solid rgba(181,154,106,.1);
-  border-radius:50%;
-}
-
-
-/* =========================================================
-   FLORAL SYMBOL
-   ========================================================= */
-
-.floral{
-  position:relative;
-  display:inline-block;
-  margin-bottom:20px;
-  color:var(--gold);
-  font-size:1.7rem;
-}
-
-.floral::before,
-.floral::after{
-  content:"";
-  position:absolute;
-  top:50%;
-  width:55px;
-  height:1px;
-  background:linear-gradient(
-    90deg,
-    transparent,
-    rgba(181,154,106,.55)
-  );
-}
-
-.floral::before{
-  right:calc(100% + 15px);
-}
-
-.floral::after{
-  left:calc(100% + 15px);
-  transform:rotate(180deg);
-}
-
-
-/* =========================================================
-   COUPLE SECTION — PREMIUM FRAME
-   ========================================================= */
-
-.couple-grid{
-  position:relative;
-  padding:25px 0;
-}
-
-.couple-grid::before{
-  content:"";
-  position:absolute;
-  inset:-20px 5%;
-  border-top:1px solid rgba(181,154,106,.12);
-  border-bottom:1px solid rgba(181,154,106,.12);
-  pointer-events:none;
-}
-
-.person{
-  position:relative;
-}
-
-.person::after{
-  content:"";
-  position:absolute;
-  width:45px;
-  height:45px;
-  border:1px solid rgba(181,154,106,.25);
-  border-radius:50%;
-  top:15px;
-  right:15%;
-  z-index:-1;
-}
-
-.amp{
-  position:relative;
-  z-index:2;
-}
-
-
-/* =========================================================
-   EVENT CARD DECORATION
-   ========================================================= */
-
-.event{
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,.7),
-      rgba(250,244,235,.8)
-    );
-}
-
-.event::after{
-  content:"";
-  position:absolute;
-  width:90px;
-  height:90px;
-  right:-45px;
-  bottom:-45px;
-  border:1px solid rgba(181,154,106,.18);
-  border-radius:50%;
-}
-
-
-/* =========================================================
-   LOVE STORY DECORATION
-   ========================================================= */
-
-.timeline::before{
-  content:"";
-  position:absolute;
-  left:-3px;
-  top:0;
-  width:5px;
-  height:5px;
-  border-radius:50%;
-  background:var(--gold);
-}
-
-.timeline{
-  position:relative;
-}
-
-
-/* =========================================================
-   GALLERY FRAME
-   ========================================================= */
-
-.gallery{
-  position:relative;
-}
-
-.gallery::before{
-  content:"OUR MOMENTS";
-  position:absolute;
-  top:35px;
-  left:50%;
-  transform:translateX(-50%);
-  color:rgba(128,100,61,.08);
-  font:600 4rem "Cormorant Garamond",serif;
-  letter-spacing:.08em;
-  white-space:nowrap;
-  pointer-events:none;
-}
-
-
-/* =========================================================
-   GIFT CARD PREMIUM
-   ========================================================= */
-
-.gift-card{
-  position:relative;
-  overflow:hidden;
-}
-
-.gift-card::before,
-.gift-card::after{
-  content:"";
-  position:absolute;
-  width:70px;
-  height:70px;
-  border:1px solid rgba(181,154,106,.18);
-}
-
-.gift-card::before{
-  top:-35px;
-  left:-35px;
-  border-radius:50%;
-}
-
-.gift-card::after{
-  right:-35px;
-  bottom:-35px;
-  border-radius:50%;
-}
-
-
-/* =========================================================
-   RSVP PREMIUM
-   ========================================================= */
-
-.rsvp{
-  position:relative;
-}
-
-.rsvp::before{
-  content:"";
-  position:absolute;
-  top:40px;
-  left:50%;
-  width:80px;
-  height:1px;
-  background:var(--gold);
-  transform:translateX(-50%);
-  opacity:.5;
-}
-
-
-/* =========================================================
-   CLOSING
-   ========================================================= */
-
-.closing{
-  isolation:isolate;
-}
-
-.closing::before{
-  content:"";
-  position:absolute;
-  inset:25px;
-  border:1px solid rgba(255,255,255,.25);
-  z-index:2;
-  pointer-events:none;
-}
-
-.closing-copy h2{
-  text-shadow:
-    0 5px 25px rgba(0,0,0,.35);
-}
-
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-
-@media(max-width:700px){
-
-  .welcome::before{
-    inset:15px;
-  }
-
-  .welcome::after{
-    width:330px;
-    height:330px;
-  }
-
-  .p1{
-    left:-80px;
-    top:-90px;
-    transform:scale(.8) rotate(38deg);
-  }
-
-  .p2{
-    right:-90px;
-    bottom:-120px;
-    transform:scale(.8) rotate(215deg);
-  }
-
-  .p3{
-    right:-15px;
-    top:18%;
-    transform:scale(.7) rotate(65deg);
-  }
-
-  .section::before{
-    left:-150px;
-  }
-
-  .section::after{
-    right:-120px;
-  }
-
-  .gallery::before{
-    font-size:2.7rem;
-    top:30px;
-  }
-
-  .couple-grid::before{
-    inset:-10px 0;
-  }
-
-}
-
