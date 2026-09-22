@@ -30,8 +30,8 @@ const WEDDING={
 
   gift:{
     bank:"BANK BCA",
-    account:"1234567890",
-    holder:"Andi Pratama"
+    account:"8195331801",
+    holder:"Maulisma Sari"
   },
 
   whatsapp:"0858-0501-5967",
