@@ -4,7 +4,7 @@ const WEDDING={
   bride:"Putri Wirasti",
   guest:"Bapak/Ibu/Saudara/i",
   dateText:"10 Oktober 2026",
-  dateShort:"10 • 11 • 2026",
+  dateShort:"10 • 10 • 2026",
   dateISO:"2026-10-10T09:00:00+07:00",
 
   parents:{
